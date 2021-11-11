@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.Container1{
+    background-color: darkslategray;
+    background-image: url(https://source.unsplash.com/1920x1080/?sky,rain);
+    filter: blur(0px);
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    overflow: hidden;
+}
+
+.Elementos{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.Logo{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 100px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.Título{
+    margin-top: 60px;
+    color: white;
+    user-select: none;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Mohave', sans-serif;
+}
+
+.CaixaDePesquisa{
+    position: relative;
+    text-align: center;
+    color: black;
+    outline: none;
+    padding: 7px;
+}
+
+.Seletor{
+    position: relative;
+    text-align: center;
+    width: 100px;
+    outline: none;
+    padding: 7px;
+    border: none;
+}
+
+.BotãoPesquisar{
+    padding: 7px 50px 7px 50px;
+    position: absolute;
+    left: 50%;
+    margin-top: 40px;
+    transform: translate(-50%);
+    background-color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.BotãoPesquisar:hover{
+    background-color: gainsboro;
+}
+
+.CidadeNome, .Temperatura, .TemperaturaMinMax, .Umidade{
+    font-family: 'Mohave', sans-serif;
+    color: white;
+    position: relative;
+    user-select: none;
+    width: max-content;
+    left: 50%;
+    transform: translate(-50%);
+}
+.CidadeNome{
+    font-size: 40px;
+    top: 70px;
+}
+.Temperatura{
+    font-size: 45px;
+    top: 100px;
+}
+.TemperaturaMinMax{
+    font-size: 27px;
+    top: 130px;
+}
+.Umidade{
+    font-size: 27px;
+    top: 170px;
+}
+
+.Créditos{
+    position: absolute;
+    color: white;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 25px;
+    background-color: darkslategray;
+    width: max-content;
+    padding: 10px 15px 10px 15px;
+    border-radius: 50px;
+    user-select: none;
+}
+.Créditos a{
+    color: lightseagreen;
+    text-decoration: none;
+}
