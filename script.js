@@ -1,3 +1,5 @@
+// Por favor, não use minha chave da API do OpenWeather, se você for no site deles poderá criar uma chave só sua para criar seus projetos da mesma forma que eu!
+console.log("Sim, o GeoLocation não está funcionando e eu não tenho idéia de como fazê-lo funcionar. Obrigado pela visita e sinta-se a vontade para se inspirar em meu código.")
 const appid = "9de5479e832a3da8e41042bd83940666"
 var cidadedigitada;
 var paislockado;
@@ -46,54 +48,45 @@ function pesquisar(){
                 var umidade = (ContatarResultados.main.humidity)
                 var condicao = (ContatarResultados.weather[0].description)
                 console.log(condicao)
-
+                
                 // Condições temporais a partir daqui
                 if (condicao == "chuva leve"){
                     CondiçãoClima.innerHTML = "Chuva Leve";
                     Background.style.backgroundImage = "url(https://source.unsplash.com/1920x1080/?rain)";
-                    return
                 }
                 if (condicao == "chuva"){
                     CondiçãoClima.innerHTML = "Chuva"
                     Background.style.backgroundImage = "url(https://source.unsplash.com/1920x1080/?rain)";
-                    return
                 }
                 if (condicao == "chuvoso"){
                     CondiçãoClima.innerHTML = "Chuvoso"
                     Background.style.backgroundImage = "url(https://source.unsplash.com/1920x1080/?thunder,rain)";
-                    return
                 }
                 if (condicao == "temporal"){
                     CondiçãoClima.innerHTML = "Temporal"
                     Background.style.backgroundImage = "url(https://source.unsplash.com/1920x1080/?rain,cloudy)";
-                    return
                 }
                 if (condicao == "garoa"){
                     CondiçãoClima.innerHTML = "Garoa"
                     Background.style.backgroundImage = "url(https://source.unsplash.com/1920x1080/?foggy)";
-                    return
                 }
                 if (condicao == "nuvens"){
                     CondiçãoClima.innerHTML = "Algumas nuvens"
                     Background.style.backgroundImage = "url(https://source.unsplash.com/1920x1080/?clouds,sunrise)";
-                    return
                 }
                 if (condicao == "nuvens dispersas"){
                     CondiçãoClima.innerHTML = "Nuvens dispersas"
                     Background.style.backgroundImage = "url(https://source.unsplash.com/1920x1080/?clouds)";
-                    return
                 }
                 if (condicao == "parcialmente nublado"){
                     CondiçãoClima.innerHTML = "Parcialmente nublado"
                     Background.style.backgroundImage = "url(https://source.unsplash.com/1920x1080/?cloudy)";
-                    return
                 }
                 if (condicao == "nublado"){
                     CondiçãoClima.innerHTML = "Nublado"
                     Background.style.backgroundImage = "url(https://source.unsplash.com/1920x1080/?cloudy)";
-                    return
                 }
-
+                
                 CidadeNome.innerHTML = cidade
                 TemperaturaNome.innerHTML = temperatura + "C°"
                 TemperaturaMinMaxNome.innerHTML = "Max: " + temperaturamax + "C° | Min: " + temperaturamin + "C°"
@@ -104,7 +97,6 @@ function pesquisar(){
 }
 
 //#region GeoLocation
-/*
 var opcoeslocal = {
     enableHighAccuracy: true,
     maximumAge: 0,
@@ -142,5 +134,4 @@ function posicao(pos){
         UmidadeNome.innerHTML = "Umidade: " + umidade + "%";
     })
 }
-*/
 //#endregion
