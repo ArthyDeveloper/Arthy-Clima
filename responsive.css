@@ -23,12 +23,26 @@
     }
 }
 
+@media screen and (max-height: 630px){
+    .Temperatura{
+        top: 85px;
+    }
+    .TemperaturaMinMax{
+        top: 105px;
+    }
+    .Umidade{
+        top: 130px;
+    }
+}
 @media screen and (max-height: 599px){
     .Título{
         margin-top: 50px;
     }
     .CidadeNome{
         top: 45px;
+    }
+    .CondiçãoClima{
+        top: 40px;
     }
     .Temperatura{
         top: 55px;
@@ -41,12 +55,24 @@
     }
 }
 
+@media screen and (max-height: 550px){
+    .TemperaturaMinMax{
+        top: 60px;
+    }
+    .Umidade{
+        top: 70px;
+    }
+}
+
 @media screen and (max-height: 530px){
     .Título{
         margin-top: 40px;
     }
     .CidadeNome{
         top: 40px;
+    }
+    .CondiçãoClima{
+        top: 35px;
     }
     .Temperatura{
         top: 35px;
@@ -65,9 +91,11 @@
     }
     .CidadeNome{
         top: 40px;
+        font-size: 30px;
     }
     .Temperatura{
         top: 35px;
+        font-size: 35px;
     }
     .TemperaturaMinMax{
         top: 35px;
@@ -77,13 +105,9 @@
     }
 }
 
-@media screen and (max-height: 444px){
+@media screen and (max-height: 445px){
     .Título{
         margin-top: 20px;
-    }
-}
-@media screen and (max-height: 425px){
-    .Título{
         font-size: 43px;
     }
     .CaixaDePesquisa{
@@ -96,7 +120,72 @@
     .BotãoPesquisar{
         padding: 7px 30px 7px 30px;
     }
+    .Créditos{
+        margin-bottom: 10px;
+    }
 }
 @media screen and (max-height: 410px){
-    /* Fazer aqui */
+    .Título{
+        margin-top: 10px;
+    }
+    .CidadeNome{
+        top: 40px;
+        font-size: 30px;
+    }
+    .CondiçãoClima{
+        font-size: 25px;
+        top: 29px;
+    }
+    .Temperatura{
+        top: 24px;
+        font-size: 33px;
+    }
+    .TemperaturaMinMax{
+        top: 18px;
+        font-size: 20px;
+    }
+    .Umidade{
+        top: 15px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-height: 345px){
+    .Título{
+        margin-top: 0px;
+    }
+    .CaixaDePesquisa{
+        padding: 5px;
+        width: 110px;
+    }
+    .Seletor{
+        padding: 5px;
+        width: 110px;
+    }
+    .BotãoPesquisar{
+        padding: 5px 20px 5px 20px;
+        top: 53px;
+    }
+}
+
+@media screen and (max-height: 330px){
+    .CidadeNome{
+        top: 29px;
+    }
+    .CondiçãoClima{
+        top: 20px;
+    }
+    .Temperatura{
+        top: 13px;
+    }
+    .TemperaturaMinMax{
+        top: 7px;
+    }
+    .Umidade{
+        top: 2px;
+    }
+    .Créditos{
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
 }
