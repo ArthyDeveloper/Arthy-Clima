@@ -65,6 +65,7 @@
 }
 
 .Seletor{
+    background-color: white;
     position: relative;
     text-align: center;
     width: 100px;
@@ -87,7 +88,7 @@
     background-color: gainsboro;
 }
 
-.CidadeNome, .Temperatura, .TemperaturaMinMax, .Umidade{
+.CidadeNome, .CondiçãoClima, .Temperatura, .TemperaturaMinMax, .Umidade{
     font-family: 'Mohave', sans-serif;
     color: white;
     position: relative;
@@ -98,19 +99,23 @@
 }
 .CidadeNome{
     font-size: 40px;
-    top: 70px;
+    top: 60px;
+}
+.CondiçãoClima{
+    font-size: 30px;
+    top: 60px;
 }
 .Temperatura{
     font-size: 45px;
-    top: 100px;
+    top: 90px;
 }
 .TemperaturaMinMax{
     font-size: 27px;
-    top: 130px;
+    top: 120px;
 }
 .Umidade{
     font-size: 27px;
-    top: 170px;
+    top: 150px;
 }
 
 .Créditos{
